@@ -6,7 +6,7 @@ export default function Page() {
     return (
         <>
             <Head>
-                <title>Rishika's Portfolio | Leading India</title>
+                <title>Rishika&apos;s Portfolio | Leading India</title>
             </Head>
             <div className="content">
                 <h1>Chapter 4.3: Leading India</h1>
