@@ -5,7 +5,7 @@ export default function Page() {
     return (
         <>
             <Head>
-                <title>Rishika's Portfolio | Insti</title>
+                <title>Rishika&apos;s Portfolio | Insti</title>
             </Head>
             <div className="content">
                 <h1>Chapter 2: The Insti</h1>
