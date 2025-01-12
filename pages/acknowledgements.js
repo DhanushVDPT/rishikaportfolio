@@ -4,7 +4,7 @@ export default function Page() {
     return (
         <>
             <Head>
-                <title>Rishika's Portfolio | Acknowledgements</title>
+                <title>Rishika&apos;s Portfolio | Acknowledgements</title>
             </Head>
             <div className="content">
                 <h1>Acknowledgements</h1>
