@@ -1,0 +1,452 @@
+@font-face {
+    font-family: 'Lemon Tuesday';
+    src: url(./fonts/Lemon\ Tuesday.otf);
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-size: 1.05em;
+    font-family: 'Montserrat-Regular';
+
+}
+
+.onlymobile{
+    display: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #F6E0D4;
+    color: #000000;
+}
+
+#sidebar-active{
+    display: none;
+}
+.open-sidebar{
+    position:fixed;
+    top:0.2em;
+    right:0.2em;
+}
+.close-sidebar{
+    display: flex;
+    justify-content: flex-end;
+}
+.sidebar{
+    display: flex;
+    font-size: 0.95em;
+}
+button{
+    background: none;
+}
+.hamburger{
+    cursor: pointer;
+    margin-top: 0.5em;
+}
+.nav-bar{
+    height: 100vh;
+    position: fixed;
+    top:0;
+    right: -100%;
+    width: 25vw;
+    background: #00c4cc;
+    transition: 0.4s ease-out;
+    z-index: 10;
+}
+.nav-bar ul{
+    display: block;
+    width: fit-content;
+    margin-left: 0.8em;
+    text-align: center;
+    list-style: none;
+}
+.nav-bar ul li{
+    margin-bottom: 0.7em;
+}
+.nav-bar li a{
+    color: #000000;
+}
+#sidebar-active:checked ~ .nav-bar{
+    right: 0;
+}
+#sidebar-active:checked ~ #overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+a{
+    font-family: 'Montserrat-Bold';
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 2.6em;
+    margin: 0.5em auto;
+    font-family: 'Lemon Tuesday';
+    color: #00c4cc;
+}
+h2{
+    font-size: 1.6em;
+    margin: 0.5em auto;
+}
+
+.homelist {
+    list-style: none;
+    ::marker{
+        content: ">";
+        color: #48b;
+    }
+}
+
+.homelist li {
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.homelist li a{
+    padding: 0.5em;
+    border-radius: 50px;
+}
+
+.homelist li a:hover{
+    background: #fff;
+    color: #000000;
+    text-decoration: none;
+}
+
+.nested{
+    font-size: 0.8em;
+    margin-left: 2em !important;
+    margin-top: 0.3em;
+}
+
+.nav-bar a{
+    font-size: 0.8em;
+    border-radius: 50px;
+    padding: 0.5em;
+    transition: 0.2s;
+    color: #000000;
+}
+
+.nav-bar a:visited{
+    border-radius: 50px;
+    padding: 0.5em;
+    transition: 0.2s;
+    color: #000000;
+}
+
+.nav-bar a:hover{
+    background: #F6E0D4;
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-bar a:active{
+    border-radius: 50px;
+    padding: 0.5em;
+    background: #F6E0D4;
+    color: #000000;
+    text-decoration: none;
+}
+
+.mobiletitle{
+    font-family: 'Lemon Tuesday';
+    font-size: 1.2em;
+    color: #00c4cc;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.layoutcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.content-para{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.preface {
+    font-size: 1.5em;
+}
+
+.bigA{
+    font-size: 6.2em;
+    margin-right: 0.2em;
+}
+
+.ch01{
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ch01p{
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    width: 62vw;
+}
+
+.ch01bold{
+    font-family: 'Montserrat-Bold';
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.answerimg{
+    width: 15em;
+    height:15em;
+}
+
+.ad{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stops{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad p, .stops p{
+    font-size: 0.8em;
+    margin-top: 0.2em;
+}
+
+.stopsimg{
+    margin-top: 1em;
+    margin-right: 0.5em;
+    width: 15em;
+    height: auto;
+}
+
+.mycollab {
+    width: auto;
+    height: 80vh;
+}
+
+.showcase {
+    height: 50vh;
+    width: auto;
+}
+
+.warmwelcome {
+    width: 40vw;
+}
+
+.smaller{
+    font-size: 0.7em;
+}
+
+.nmacc{
+    text-align: justify;
+    width: 42vw;
+}
+
+.nmaccimg{
+    height: 42vh;
+    width: auto;
+}
+
+.teachersdayimg{
+    height: 50vh;
+    width: auto;
+}
+
+.studentledleft{
+    width: 15vw;
+    height: auto;
+}
+
+.leadingstudents{
+    align-items: flex-start;
+}
+
+.studentledright{
+    width: 60vw;
+    font-size: 0.85em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marks{
+    width: 40vw;
+    height: auto;
+}
+
+.leadingself{
+    align-items: center;
+}
+
+.newavenue{
+    height: 40vh;
+    width: auto;
+}
+
+.postboardtext {
+    width: 98vw;
+}
+
+.postboard {
+    width: 90vw;
+    height: auto;
+}
+.farewell {
+    width: 60vw;
+    height: auto;
+}
+
+.welcomeimg{
+    width: auto;
+    height: 65vh;
+}
+
+.leadingindiaimg{
+    width: auto;
+    height: 70vh;
+}
+
+.leftright {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin-bottom: 2em;
+}
+
+.options {
+    list-style: none;
+    margin-bottom: 2em;
+}
+
+.options li{
+    display: inline;
+    margin-right: 2em;
+}
+
+.options li a{
+    border-radius: 50px;
+    padding: 0.5em;
+}
+
+.options li a:hover{
+    background: #fff;
+}
+
+.studentledright li{
+    margin-right: 0;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.reflections {
+    width: auto;
+    height: 60vh;
+    margin-bottom: 2em;
+}
+
+.health {
+    width: 45vw;
+    height: auto;
+}
+
+.studentledoptions{
+    text-align: center;
+    font-size: 0.98em;
+    margin: 1em auto 0;
+}
+
+.whatnext{
+    text-align: justify;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.gallery {
+    width: 80vw;
+    height: auto;
+}
+
+.home {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cover {
+    height: auto;
+    width: 40vw;
+}
+
+@media screen and (max-width:1023px){
+    .home{
+        display: none;
+    }
+    .content{
+        display: none;
+    }
+    .onlymobile{
+        display: flex;
+        margin-top: 3em;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    body{
+        font-size: 0.9em;
+    }
+    th, td{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:535px){
+    body{
+        font-size: 0.7em;
+    }
+    .subject{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

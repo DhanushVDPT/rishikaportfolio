@@ -1,0 +1,18 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/gallery": "pages/gallery.js",
+  "/": "pages/index.js",
+  "/acknowledgements": "pages/acknowledgements.js",
+  "/preface": "pages/preface.js",
+  "/mithanagar": "pages/mithanagar.js",
+  "/insti": "pages/insti.js",
+  "/beginning": "pages/beginning.js",
+  "/reflection": "pages/reflection.js",
+  "/better": "pages/better.js",
+  "/whatnext": "pages/whatnext.js",
+  "/leadingothers": "pages/leadingothers.js",
+  "/leadingself": "pages/leadingself.js",
+  "/leadingindia": "pages/leadingindia.js"
+}
