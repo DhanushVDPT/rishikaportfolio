@@ -5,7 +5,7 @@ export default function Page() {
     return (
         <>
             <Head>
-                <title>Rishika's Portfolio | Mitha Nagar MPS</title>
+                <title>Rishika&apos;s Portfolio | Mitha Nagar MPS</title>
             </Head>
             <div className="content">
                 <h1>Chapter 3: Mitha Nagar MPS</h1>
