@@ -1,11 +1,10 @@
 import Head from "next/head"
-import Image from "next/image";
 
 export default function Page() {
     return (
         <>
             <Head>
-                <title>Rishika's Portfolio | What Next?</title>
+                <title>Rishika&apos;s Portfolio | What Next?</title>
             </Head>
             <div className="content">
                 <h1>Chapter 6: What Next</h1>
